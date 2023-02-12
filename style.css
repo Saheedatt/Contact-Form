@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Halant:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Halant", serif;
+}
+body{
+    background: #f5f5f5;
+    padding: 0 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px 60px 30px 40px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.005rem;  
+    margin-bottom: 25px; 
+}
+.container .form{
+    width: 100%;
+}
+.input-field{
+    margin-bottom: 15px;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;  
+}
+.input-field label{
+    width: 250px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+::placeholder{
+    padding: 7px;
+}
+.input{
+    width: 300px;
+}
+select{
+    padding: 3px;
+}
+input[type="radio"]{
+  margin: 1px 5px 3px 10px;
+}
+input[type="checkbox"]{
+    margin-left: 10px;
+    margin-right: 2px;
+}
+.btn{
+    background: #155EEF;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 270px;
+    
+}
+button{
+    border: none;
+    float: right;
+   
+}
+input-field:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 420px){
+    .input-field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-field label{
+        margin-bottom: 5px;
+    }
+}
